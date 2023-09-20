@@ -78,13 +78,14 @@ body {
 	height: 100%;
 
 }
-#about-me {
+.about-me {
 	flex: 2
 }
-.about-me__title {
+#about-me__title {
 	margin-top: 1em;
-	margin-bottom: 60px;
-	font-size: 30px;
+	margin-bottom: 50px;
+	font-size: xx-large;
+	font-weight: bold;
 }
 .about-me__introduction {
 	font-family: 'Spectral';
@@ -93,9 +94,23 @@ body {
 	font-size: large;
 	width: 60%;
 }
-#about-me p {
+.about-me p {
 	width: 80%;
 	font-size: 14px;
+}
+
+.more-info {
+	display: flex;
+	flex-direction: column;
+	gap: 0rem;
+}
+
+.more-info p {
+	margin-bottom: 0;
+}
+
+#more-info-title{
+	font-size: x-large;
 }
 
 .title{
@@ -106,7 +121,7 @@ body {
 	justify-content: center;
 }
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-	color: #fff;
+	color: black;
 	background-color: #BEB45A;
 	border-radius:0 ;
 }
@@ -256,11 +271,11 @@ input[type="submit"] {
 	#about, #contact .container {
 		align-items: center;
 	}
-	.about-me__title {
+	#about-me__title {
 		margin-top: 0;
 		margin-bottom: 1em;
 	}
-	#about-me h1, #about-me p {
+	.about-me h1, .about-me p {
 		width: 100%;
 	}
 }
@@ -282,7 +297,7 @@ input[type="submit"] {
 		left: 0;
 		z-index: -1;
 	}
-	.about-me__title{
+	#about-me__title{
 		text-align: center;
 		margin-top: 1em;
 	}
